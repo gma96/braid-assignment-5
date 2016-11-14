@@ -1,3 +1,4 @@
+USE script;
 CREATE TABLE script (Name VARCHAR(255),
     -> City VARCHAR(255),
     -> Siblings INT,

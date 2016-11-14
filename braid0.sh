@@ -30,15 +30,4 @@ DATE=$(date +"%m-%d-%Y")
 # Prints answers, ID, and Date to csv file
 echo $A1, $A2, $A3, $A4, $A5, $ID, $DATE >> braid.sql
 
-mysql-ctl cli
-
-CREATE TABLE script (Name VARCHAR(255),
-    -> City VARCHAR(255),
-    -> Siblings INT,
-    -> Age INT,
-    -> Major VARCHAR(255),
-    -> ID VARCHAR(255),
-    -> Date DATE);
-    
-    INSERT INTO script (Name, City, Siblings, Age, Major, ID, Date)
-    VALUES (A1, A2, A3, A4, ID, DATE)
+mysqldump -u jpanken -p script < braid0.sql
