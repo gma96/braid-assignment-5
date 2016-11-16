@@ -39,6 +39,7 @@ CREATE TABLE `script` (
 
 LOCK TABLES `script` WRITE;
 /*!40000 ALTER TABLE `script` DISABLE KEYS */;
+INSERT INTO `script` VALUES ('William',' Montrose',0,38,' Bluegrass',' 6j4t79','2016-11-16'),('Wanda',' Madison',6,62,' Folklore',' ffxIK9','2016-11-16'),('Kelly',' Rochester',4,22,' English',' 2v8qOc','2016-11-16'),('Perry','Reno',2,21,'Voice','35dLFf','2016-11-16'),('Zoe','Panama',2,23,'French','zcTrSP','2016-11-16');
 /*!40000 ALTER TABLE `script` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-14 22:01:17
+-- Dump completed on 2016-11-16 22:11:11

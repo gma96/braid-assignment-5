@@ -27,7 +27,7 @@ ID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 6 | head -n 1)
 # Date
 DATE=$(date +"%Y-%m-%d")	
 
-# Prints answers, ID, and Date to csv file
-echo $A1, $A2, $A3, $A4, $A5, $ID, $DATE >> answer.csv
+mysql -u jpanken -p -e "USE script; INSERT INTO script (Name, City, Siblings, Age, Major, ID, Date) 
+VALUES ('$A1', '$A2', '$A3', '$A4', '$A5', '$ID', '$DATE')"
 
-mysql -u jpanken -p -e "USE script; INSERT INTO script (Name, City, Siblings, Age, Major, ID, Date) VALUES ($A1, $A2, $A3, $A4, $A5, $ID, $DATE)"
+mysqldump -u jpanken -p script > braid0.sql
