@@ -24,7 +24,7 @@ read A5
 ID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 6 | head -n 1)
 
 # Date
-DATE=$(date +"%m-%d-%Y")	
+DATE=$(date +"%Y-%m-%d")	
 
 # Prints answers, ID, and Date to csv file
 echo $A1, $A2, $A3, $A4, $A5, $ID, $DATE >>  answers.csv
