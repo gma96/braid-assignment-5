@@ -24,6 +24,6 @@ read varmajor
 
 varid=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 6 | head -n 1)
 
-vardate=$(date +"%m-%d-%Y")
+vardate=$(date +"%Y-%m-%d")
 
 echo $varname, $varcity, $varsibs, $varage, $varmajor, $varid, $vardate >> answers.csv 
